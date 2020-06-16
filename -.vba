@@ -40,6 +40,8 @@ End Sub
         
         Workbooks("workbookName").path 'Return only path to choosen workbook. Workbook have to be open
         Workbooks("workbookName").Close 'Close workbook at given name
+        Workbooks.Open fileName:="path" 'Open workbook under the given path
+        
         
         Sheets("sheetName").Select 'Go to selected sheet
         
