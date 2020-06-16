@@ -12,13 +12,9 @@ Sub Clear_Active_Sheet()
         selectionRange.Clear
         
         For Each s In ActiveSheet.Shapes
-        
             If Not Intersect(selectionRange, s.TopLeftCell) Is Nothing Then
-            
                 s.Delete
-                
             End If
-            
         Next s
     
     End If
