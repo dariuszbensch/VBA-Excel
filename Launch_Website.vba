@@ -13,7 +13,7 @@ Private Declare PtrSafe Function ShellExecute _
                                                         
                                                         
                                                         
-Sub Open_Website(strUrl As String)
+Sub Open_Website_Url(strUrl As String)
 On Error GoTo wellsrLaunchError
     Dim r As Long
     r = ShellExecute(0, "open", strUrl, 0, 0, 1)
