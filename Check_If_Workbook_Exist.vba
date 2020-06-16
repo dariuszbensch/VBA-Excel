@@ -1,5 +1,6 @@
 'Checking if workbook exist
 'Path should contain .extension
+'Returning true if exist
 Function Check_If_Workbook_Exist(path As String) As Boolean
 
     Dim TestStr As String
