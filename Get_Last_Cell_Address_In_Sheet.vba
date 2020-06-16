@@ -10,9 +10,7 @@ Function Get_Last_Cell_Address_In_Sheet(workbookName As String, sheetName As Str
         Dim lastCell As String: lastCell = Workbooks(workbookName).Worksheets(sheetName).Cells(1, 1).SpecialCells(xlLastCell).Address
         
         If (lastCell = "$A$1") Then
-            
             If (Workbooks(workbookName).Worksheets(sheetName).Cells(1, 1) = "") Then lastCell = 0
-            
         End If
         
         Get_Last_Cell_Address_In_Sheet = lastCell
