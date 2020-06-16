@@ -9,7 +9,7 @@ Sub Navigation_Shape()
         'If sheet doesn't exist then create new on the end and go there
         If Not Check_If_Sheet_Exist(sheetName) Then
             
-            Sheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.count)).Name = sheetName
+            Sheets.Add(After:=ThisWorkbook.Sheets(ThisWorkbook.Sheets.Count)).Name = sheetName
             Worksheets(sheetName).Activate
         
         'Else go to the sheet
@@ -25,12 +25,11 @@ End Sub
 
 
 'Checking if sheet exist
-Function Check_If_Sheet_Exist(sheetName As String) As Boolean
+Private Function Check_If_Sheet_Exist(sheetName As String) As Boolean
 
     On Error Resume Next
         Dim sheet As Worksheet: Set sheet = ThisWorkbook.Sheets(sheetName)
     On Error GoTo 0
-
     If (Not sheet Is Nothing) Then
         Check_If_Sheet_Exist = True
     Else
