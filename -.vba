@@ -44,6 +44,7 @@ End Sub
         Sheets("sheetName").Select 'Go to selected sheet
         
         ActiveWorkbook.name 'Return active workbook name with .extension
+        ActiveWorkbook.Save 'Saving current active workbook
         ActiveWorkbook.Sheets(sheetName).Visible = xlSheetVeryHidden 'Hide sheet - working if sheet exist
         ActiveWorkbook.Sheets(sheetName).Visible = xlSheetVisible 'Unhide sheet - working if sheet exist
             
