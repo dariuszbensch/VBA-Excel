@@ -42,16 +42,23 @@ End Sub
         Workbooks("workbookName").Close 'Close workbook at given name
         Workbooks.Open fileName:="path" 'Open workbook under the given path
         
-        
+        Sheets("sheetName").Visible = xlSheetVeryHidden 'Hide sheet - working if sheet exist
+        Sheets("sheetName").Visible = xlSheetVisible 'Unhide sheet - working if sheet exist
         Sheets("sheetName").Select 'Go to selected sheet
+        Sheets("sheetName").Delete 'Delete choosen sheet. Method will be ask if we want to delete sheet
+        Sheets.Add.Name = "sheetName" 'Create new sheet in active workbook with chosen name
+        Sheets.Add  'Create new sheet in active workbook
         
         ActiveWorkbook.path 'Return path to the folder of current workbook is
         ActiveWorkbook.name 'Return active workbook name with .extension
         ActiveWorkbook.Save 'Saving current active workbook
-        ActiveWorkbook.Sheets(sheetName).Visible = xlSheetVeryHidden 'Hide sheet - working if sheet exist
-        ActiveWorkbook.Sheets(sheetName).Visible = xlSheetVisible 'Unhide sheet - working if sheet exist
-            
+        
         ActiveSheet.name 'Return active sheet name
         
         Selection.Address 'Return address of one selected cell or range
         FileDateTime("pathToFile") 'Return date and time of file modifications
+                
+        Application.AskToUpdateLinks = False 'Switch off comunicates
+        Application.AskToUpdateLinks = True 'Switch on comunicates     
+        Application.DisplayAlerts = False 'Switch off comunicates            
+        Application.DisplayAlerts = True 'Switch on comunicates     
