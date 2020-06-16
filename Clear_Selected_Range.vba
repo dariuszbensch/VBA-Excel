@@ -1,3 +1,4 @@
+'Function clear selected data, formats, photos etc...
 Sub Clear_Selected_Range()
     
     On Error GoTo Error_handler
