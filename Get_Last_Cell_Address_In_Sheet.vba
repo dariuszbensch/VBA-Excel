@@ -1,4 +1,5 @@
 'Return address of last cell in which is any value
+'Workbook name with .extention
 Function Get_Last_Cell_Address_In_Sheet(workbookName As String, sheetName As String) As String
     
     On Error GoTo Error_handler
@@ -14,7 +15,7 @@ Function Get_Last_Cell_Address_In_Sheet(workbookName As String, sheetName As Str
             
         End If
         
-        RANGE_Last_Cell_In_Sheet = lastCell
+        Get_Last_Cell_Address_In_Sheet = lastCell
         
 Error_handler:
 Err.Clear
