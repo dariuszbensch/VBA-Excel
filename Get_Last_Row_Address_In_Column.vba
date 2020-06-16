@@ -1,5 +1,5 @@
 'Return number of last row ich which is any value in choosen column
-Function Get_Last_Row_In_Column(workbookName As String, sheetName As String, columnLetter As String) As Long
+Function Get_Last_Row_Address_In_Column(workbookName As String, sheetName As String, columnLetter As String) As Long
     
     On Error GoTo Error_handler
         
@@ -16,7 +16,7 @@ Function Get_Last_Row_In_Column(workbookName As String, sheetName As String, col
             If (sheet.Cells(1, column) = "") Then lastRow = 0
         End If
 
-        Get_Last_Row_In_Column = lastRow
+        Get_Last_Row_Address_In_Column = lastRow
     
 Error_handler:
 Err.Clear
