@@ -9,9 +9,7 @@ Function Get_Last_Row_Address_In_Sheet(workbookName As String, sheetName As Stri
         Dim lastRow As Long: lastRow = Workbooks(workbookName).Worksheets(sheetName).Cells(1, 1).SpecialCells(xlLastCell).Row
         
         If (lastRow = 1) Then
-            
             If (Application.CountA(Workbooks(workbookName).Worksheets(sheetName).Cells(1, 1).EntireRow) = 0) Then lastRow = 0
-            
         End If
         
         Get_Last_Row_Address_In_Sheet = lastRow
