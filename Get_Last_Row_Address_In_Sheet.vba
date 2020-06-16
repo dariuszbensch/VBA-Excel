@@ -1,5 +1,5 @@
 'Return number of last row which contain any value
-Function Last_Row_Address_In_Sheet(workbookName As String, sheetName As String) As Long
+Function Get_Last_Row_Address_In_Sheet(workbookName As String, sheetName As String) As Long
     
     On Error GoTo Error_handler
         
@@ -14,7 +14,7 @@ Function Last_Row_Address_In_Sheet(workbookName As String, sheetName As String) 
             
         End If
         
-        Last_Row_Address_In_Sheet = lastRow
+        Get_Last_Row_Address_In_Sheet = lastRow
     
 Error_handler:
 Err.Clear
