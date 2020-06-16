@@ -43,6 +43,7 @@ End Sub
         
         Sheets("sheetName").Select 'Go to selected sheet
         
+        ActiveWorkbook.path 'Return path to the folder of current workbook is
         ActiveWorkbook.name 'Return active workbook name with .extension
         ActiveWorkbook.Save 'Saving current active workbook
         ActiveWorkbook.Sheets(sheetName).Visible = xlSheetVeryHidden 'Hide sheet - working if sheet exist
