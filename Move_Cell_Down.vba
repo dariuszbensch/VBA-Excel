@@ -1,5 +1,5 @@
-'Moving cell down
-Sub Move_Cell_Down()
+'Moving one cell in column down
+Sub Move_One_Cell_Down()
 
     Selection.Insert Shift:=xlDown
     
