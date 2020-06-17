@@ -37,7 +37,7 @@ Function Copy_Data(fromWorkbook As String, _
         paste.paste
         
         
-        'Optional can save and close destination file
+        'Optional can save and close destination file. "Dir" extracting file name from path
         Workbooks(Dir(toWorkbook)).Save
         Workbooks(Dir(toWorkbook)).Close
         
