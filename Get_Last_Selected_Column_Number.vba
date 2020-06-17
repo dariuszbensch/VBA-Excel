@@ -2,6 +2,6 @@
 Function Get_Last_Selected_Column_Number() As Long
 
     Dim selectionRange As Range: Set selectionRange = Selection
-    lastSelectedColumn = selectionRange.Cells(1, selectionRange.Columns.Count).Column
+    Get_Last_Selected_Column_Number = selectionRange.Cells(1, selectionRange.Columns.Count).Column
     
 End Function
