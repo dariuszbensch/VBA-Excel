@@ -37,9 +37,9 @@ Function Copy_Data(fromWorkbook As String, _
         paste.paste
         
         
-        'Optional can save and close destination file:
-        'ActiveWorkbook.Save
-        'Workbooks(ActiveWorkbook.Name).Close
+        'Optional can save and close destination file
+        Workbooks(Dir(toWorkbook)).Save
+        Workbooks(Dir(toWorkbook)).Close
         
         
 Error_handler:
