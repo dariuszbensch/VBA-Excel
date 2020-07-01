@@ -1,4 +1,4 @@
-'Clearing evry sheets, but asking one by one if we want to clear
+'Clearing evry sheets in workbook, but asking one by one if we want to clear
 Sub Clear_All_Sheets()
 
     Dim wbk As Workbook: Set wbk = ActiveWorkbook
