@@ -11,7 +11,23 @@ Private Sub Worksheet_SelectionChange(ByVal Target As Range)
     Cells.EntireRow.AutoFit
 End Sub
 
+        
+'Hide / Unhide
+Worksheets("Sheet1").visible = False
+Worksheets("Sheet1").visible = xlSheetHidden
+Worksheets("Sheet1").visible = xlSheetVeryHidden
+Worksheets("Sheet1").Visible = True
+Worksheets("Sheet1").Visible = xlSheetVisible
 
+        
+'Communicates disable / enable
+Application.DisplayAlerts = False       
+Application.EnableEvents = False        
+
+Application.DisplayAlerts = True
+Application.EnableEvents = True
+
+        
 'Launch website on double click
 Private Sub Worksheet_BeforeDoubleClick(ByVal Target As Range, Cancel As Boolean)
     Launch_Website ("https://administrator.omega.voyager-wms.net/omni/search?term=" & ActiveCell.Value)
@@ -33,8 +49,6 @@ Sub Workbook_Open()
 End Sub
 
         
-        
-
 'Helpful methods
         Windows("workbookName").Activate 'Go to choosen workbook. Workbook have to be open
         
