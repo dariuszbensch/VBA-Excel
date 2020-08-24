@@ -1,4 +1,4 @@
-'Condition if we want to execute macro only in current workbook
+'Condition if we want to execute macro only in current workbook. Add before code we want to execute only in current workbook. Can be use also GoTo instead of Exit Sub
 If ActiveWorkbook.Name <> ThisWorkbook.Name Then Exit Sub
         '...Rest of the code...
 
