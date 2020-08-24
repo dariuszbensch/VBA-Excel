@@ -1,3 +1,8 @@
+'Condition if we want to execute macro only in current workbook
+If ActiveWorkbook.Name <> ThisWorkbook.Name Then Exit Sub
+        '...Rest of the code...
+
+
 'Auto fit columns / rows if checkbox is active
 Private Sub Worksheet_SelectionChange(ByVal Target As Range)
     If ThisWorkbook.Worksheets("WbkName").CheckBox_ColumnsAdjusting.Value Then Cells.EntireColumn.AutoFit
