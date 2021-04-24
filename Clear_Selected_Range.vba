@@ -15,6 +15,7 @@ Sub Clear_Selected_Range()
     
     Selection.NumberFormat = "0"
     
+    
 Error_handler:
 Err.Clear
 
