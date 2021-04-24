@@ -1,9 +1,9 @@
 'Change letter to number - Letter position in alphabet = number
-Function Change_Letter_To_Number(letter As String) As Integer
+Function ChangeLetterToNumber(letter As String) As Integer
     
     On Error GoTo Error_handler
     
-    Change_Letter_To_Number = Range(letter & 1).column
+    ChangeLetterToNumber = Range(letter & 1).column
 
 Error_handler:
 Err.Clear
