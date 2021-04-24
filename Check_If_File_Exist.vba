@@ -1,6 +1,7 @@
 'Checking if file exist
 'Path should contain .extension
 'Returning true if exist
+'test comment
 Function Check_If_File_Exist(path As String) As Boolean
 
     Dim TestStr As String: TestStr = ""        
